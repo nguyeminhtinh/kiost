@@ -1,0 +1,51 @@
+.input__box {
+  .css-2b097c-container {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .css-14jk2my-container {
+    width: 100%;
+  }
+}
+
+.customer-select {
+  line-height: pxToRem(30);
+
+  .css-1uccc91-singleValue {
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    line-height: pxToRem(30);
+  }
+
+  .css-1hb7zxy-IndicatorsContainer {
+    .css-tlfecz-indicatorContainer {
+      padding: pxToRem(4);
+    }
+
+    .css-1gtu0rj-indicatorContainer {
+      padding: pxToRem(4);
+    }
+  }
+}
+
+.react-datepicker__header__dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+.react-datepicker__month-select {
+  padding: pxToRem(5);
+}
+
+.react-datepicker__year-select {
+  padding: pxToRem(5);
+}
+
+@include breakpoint(sm992) {
+  body .css-1n7v3ny-option {
+    background-color: #fff;
+  }
+}

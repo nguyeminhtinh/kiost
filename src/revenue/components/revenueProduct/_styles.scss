@@ -1,0 +1,52 @@
+.essential {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: pxToRem(16);
+  border: pxToRem(1) solid $silver;
+  border-right: 0;
+
+  .total-stores {
+    width: 100%;
+    text-align: center;
+  }
+
+  .total-sales {
+    width: 100%;
+    text-align: center;
+  }
+
+  .head-total {
+    background-color: $bg-transparent;
+    border-right: pxToRem(1) solid $silver;
+    padding: pxToRem(15) pxToRem(0);
+    font-size: pxToRem(25);
+    font-weight: $bold;
+  }
+
+  .body-total {
+    border-right: pxToRem(1) solid $silver;
+    padding: pxToRem(15) pxToRem(0);
+    font-size: pxToRem(35);
+    font-weight: $bold;
+  }
+}
+
+.title-table {
+  font-size: pxToRem(25);
+  font-weight: $bold;
+  padding: pxToRem(10) pxToRem(5);
+  font-family: 'NanumSquare';
+  background-color: $bg-transparent;
+}
+
+@media (max-width: 480px) {
+  .essential {
+    .head-total {
+      font-size: 3.75vw;
+    }
+
+    .body-total {
+      font-size: 3.75vw;
+    }
+  }
+}

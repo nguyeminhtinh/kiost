@@ -1,0 +1,26 @@
+.revenue-time {
+  .table-responsive {
+    padding: 0;
+  }
+}
+
+.form-revenue-time-page {
+  @include breakpoint(sm992) {
+    .recharts-label-list * {
+      font-size: pxToRem(14);
+    }
+  }
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .custom-icon-ie .range-date svg {
+    width: pxToRem(50);
+  }
+}
+
+.recharts-cartesian-axis-tick {
+  tspan {
+    font-size: 12px;
+  }
+}

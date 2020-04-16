@@ -1,0 +1,64 @@
+.register-product-stock {
+  .input__wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.text-red {
+  color: $red;
+}
+
+.w-10 {
+  @media screen and (min-width: 1025px) {
+    width: 10%;
+  }
+
+  width: 15%;
+}
+
+.custom-radio.d-flex .label {
+  white-space: nowrap;
+}
+
+.wrapper-input-group-btn.d-flex {
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    display: block !important;
+
+    .input__wrapper {
+      width: 100%;
+      margin-bottom: pxToRem(5);
+    }
+
+    button {
+      width: 100%;
+      margin: pxToRem(5) pxToRem(0);
+    }
+  }
+}
+
+.imageLocal {
+  position: relative;
+  cursor: pointer;
+
+  .custom-file-input {
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+.popup-img-category {
+  .nav.nav-tabs a {
+    line-height: 1.4;
+  }
+}
+
+.w-130 {
+  width: calc(100% + 30px) !important;
+}
+
+.custom-width {
+  margin-left: pxToRem(-8);
+}

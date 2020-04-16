@@ -1,0 +1,22 @@
+.device-status {
+  width: pxToRem(400);
+  margin-bottom: pxToRem(30);
+
+  a.btn.btn-secondary {
+    line-height: pxToRem(30);
+  }
+}
+
+.device-page {
+  @media screen and (min-width: 767px) {
+    .wrapper-loading {
+      height: calc(100vh - 520px);
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pt-mobile {
+    padding-top: pxToRem(8);
+  }
+}

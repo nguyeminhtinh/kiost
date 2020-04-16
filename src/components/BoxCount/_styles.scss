@@ -1,0 +1,100 @@
+.count {
+  height: 100%;
+  padding-right: pxToRem(50);
+  &:last-child {
+    padding-right: 0;
+  }
+  img {
+    margin-right: pxToRem(20);
+  }
+  &__title {
+    h2 {
+      font-size: pxToRem(20);
+      font-weight: 700;
+      margin-bottom: pxToRem(15);
+    }
+  }
+  &__item {
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    min-height: pxToRem(240);
+    background-color: $gallery;
+    background-clip: border-box;
+    border: pxToRem(1) solid $white-dark;
+    border-radius: pxToRem(6);
+    padding: pxToRem(15);
+    @include boxShadow(
+      pxToRem(3),
+      pxToRem(3),
+      pxToRem(3),
+      rgba(50, 50, 50, 0.28)
+    );
+    &__number {
+      font-size: pxToRem(50);
+      font-weight: bold;
+      line-height: 1;
+      margin: 0;
+    }
+    &__link {
+      position: absolute;
+      right: pxToRem(15);
+      bottom: pxToRem(15);
+      &__detail {
+        margin-left: pxToRem(15);
+        border: pxToRem(1) solid $blue;
+        padding: pxToRem(9) pxToRem(20);
+        font-size: pxToRem(14);
+        line-height: 1.4;
+        display: block;
+        min-width: pxToRem(120);
+        border-radius: pxToRem(6);
+        color: $white;
+        background-color: $blue;
+        @include transition(0.3s);
+        position: relative;
+        &:hover {
+          background-color: $blue-linght;
+          border-color: $blue-linght;
+          color: $white;
+        }
+        svg {
+          position: absolute;
+          right: pxToRem(10);
+          top: pxToRem(10);
+        }
+      }
+    }
+  }
+  @include breakpoint(xl600) {
+    &__item {
+      min-height: pxToRem(200);
+      &__number {
+        font-size: pxToRem(40);
+      }
+    }
+  }
+  @include breakpoint(lg1280) {
+    &__title {
+      h2 {
+        font-size: pxToRem(15);
+      }
+    }
+    &__item {
+      min-height: pxToRem(180);
+      justify-content: flex-start;
+      img {
+        max-width: pxToRem(50);
+      }
+      &__number {
+        font-size: pxToRem(30);
+      }
+    }
+  }
+}
+.wrap-box {
+  padding: 0 pxToRem(20);
+  @include breakpoint(lg1280) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,31 @@
+const ROUTERS = {
+  ROOT: '/',
+  LOGIN: '/login',
+  DEVICE: '/device',
+  STORES: '/stores',
+  STORES_DETAIL: '/stores/:id',
+  DEVICE_DETAIL: '/device/:id',
+  REVENUE_TIME: '/revenues/revenue-time',
+  MEMBER: '/members',
+  REVENUEDAY_DAY: '/revenues/revenue-day',
+  MEMBER_DETAIL: '/members/:phone',
+  REVENUE_PRODUCT: '/revenues/product',
+  REVENUE_STORE: '/revenues/store',
+  PAYMENT: '/revenues/payment',
+  INVENTORY: '/inventory',
+  INVENTORY_DETAIL: '/inventory/:id',
+  MERCHANDISE: '/merchandise',
+  MERCHANDISE_ADD: '/merchandise/add',
+  REGISTER_SELF_PRODUCT: '/merchandise/registerProduct',
+  SEFT_PRODUCT: '/merchandise/manual',
+  SELF_PRODUCT: '/merchandise/manual/:id',
+  MERCHANDISE_DETAIL: '/merchandise/:id',
+  STATUS_MERCHANDISE: '/merchandise/status',
+  ADVERTISEMENT: '/advertisement',
+  ADVERTISEMENT_ADD: '/advertisement/add',
+  ADVERTISEMENT_DETAIL: '/advertisement/:id',
+  REGISTER_PRODUCT: '/merchandise/add',
+  EDIT_PRODUCT: '/merchandise/edit'
+};
+
+export default ROUTERS;

@@ -1,0 +1,69 @@
+{
+  "ignorePatterns": ["flow-typed", "node_modules/", "scripts"],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "flowtype", "react-hooks"],
+  "rules": {
+    "no-console": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    // "import/no-extraneous-dependencies": [
+    //   "error",
+    //   {
+    //     "devDependencies": [
+    //       ".storybook/**",
+    //       "stories/**"
+    //     ],
+    //     "peerDependencies": ["client/client"]
+    //   }
+    // ],
+    // "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    // "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": false
+      }
+    ],
+    "import/no-named-as-default": "off",
+    "react/jsx-curly-newline": "off",
+    "react/jsx-props-no-spreading": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}

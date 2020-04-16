@@ -1,0 +1,71 @@
+body {
+  font-family: 'Noto Sans KR' !important;
+}
+
+.reset-padding {
+  padding: 0 !important;
+}
+
+.react-datepicker__header .react-datepicker__current-month--hasYearDropdown {
+  display: none;
+}
+
+.react-datepicker__header .react-datepicker__month-read-view--selected-month,
+.react-datepicker__header .react-datepicker__year-read-view--selected-year {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.react-datepicker__navigation {
+  display: none;
+}
+
+.wrapper-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (min-width: 767px) {
+    height: calc(100vh - 450px);
+  }
+}
+
+textarea:disabled {
+  background-color: $bg-disabled !important;
+}
+
+.title {
+  font-weight: $medium;
+}
+
+.table-merchandise {
+  tbody {
+    tr {
+      z-index: 1;
+      position: relative;
+
+      td {
+        &:last-child {
+          position: relative;
+          z-index: 99;
+        }
+      }
+    }
+  }
+}
+
+input::placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder {
+  line-height: normal !important;
+  color: $steal;
+}
+
+input[type='text']::-ms-clear {
+  display: none;
+}
+
+.redirectLogin {
+  z-index: 99999999 !important;
+}

@@ -1,0 +1,15 @@
+.title__header {
+  margin-bottom: pxToRem(25);
+  padding-top: pxToRem(15);
+  h1 {
+    font-size: pxToRem(25);
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  @include breakpoint(xl500) {
+    margin-bottom: pxToRem(15);
+    h1 {
+      font-size: pxToRem(20);
+    }
+  }
+}

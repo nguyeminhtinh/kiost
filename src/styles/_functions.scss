@@ -1,0 +1,8 @@
+/*
+* function: pxToRem
+* Used to convert unit 'px' to 'rem'
+*/
+@function pxToRem($size) {
+  $remSize: $size / $font-size-base;
+  @return #{$remSize}rem;
+}

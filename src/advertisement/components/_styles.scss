@@ -1,0 +1,68 @@
+.register-ad {
+  .row__custom {
+    &:last-child {
+      border-bottom: 0.0625rem solid $boder-table;
+    }
+
+    .col-md-3 {
+      border-right: 0.0625rem solid $boder-table;
+
+      @include breakpoint(sm768) {
+        border-right: 0;
+      }
+    }
+  }
+}
+
+.file-upload {
+  display: flex;
+
+  .input__wrapper {
+    width: 80%;
+    margin-right: pxToRem(16);
+  }
+}
+
+.custom-file-label {
+  z-index: 0 !important;
+}
+
+.custom-file-input~.custom-file-label::after {
+  content: '파일찾기';
+}
+
+.custom-file {
+  overflow: hidden;
+}
+
+.header-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include breakpoint(sm375) {
+    h1 {
+      font-size: pxToRem(14);
+    }
+
+    button {
+      font-size: 0.8125rem;
+      line-height: 1.75rem;
+      padding: 0px 0.625rem;
+    }
+  }
+}
+
+.tableAd {
+  .checkbox {
+    .checkbox__label {
+      &::before {
+        top: pxToRem(-20);
+      }
+
+      &::after {
+        top: pxToRem(-14);
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.wrapper-pagination {
+  @include breakpoint(sm992) {
+    width: 100% !important;
+    margin-left: 0;
+  }
+}
+.pagination {
+  justify-content: flex-end;
+  padding-right: pxToRem(19);
+  margin-top: pxToRem(16);
+  justify-content: center;
+  .page-item {
+    cursor: pointer;
+  }
+}
+
+.store-management {
+  @media screen and (min-width: 767px) {
+    .wrapper-loading {
+      height: calc(100vh - 520px);
+    }
+  }
+}
+
+// @import './MerchantInfo/styles.scss';

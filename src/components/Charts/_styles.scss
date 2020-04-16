@@ -1,0 +1,217 @@
+.title-chart {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 pxToRem(20);
+  margin-bottom: pxToRem(15);
+
+  &.bar {
+    justify-content: center;
+
+    h2 {
+      margin-right: 0;
+    }
+  }
+
+  h2 {
+    font-size: pxToRem(20);
+    font-weight: $bold;
+    margin-bottom: 0;
+    margin-right: auto;
+    white-space: nowrap;
+  }
+
+  h3,
+  a {
+    font-size: pxToRem(32);
+    font-weight: $bold;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: pxToRem(14);
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  a {
+    margin-left: pxToRem(15);
+    border: pxToRem(1) solid $blue;
+    padding: pxToRem(6) pxToRem(15);
+    font-size: pxToRem(14);
+    line-height: 1.4;
+    min-width: pxToRem(100);
+    border-radius: pxToRem(6);
+    color: $white;
+    background-color: $blue;
+    @include transition(0.3s);
+    position: relative;
+
+    &:hover {
+      background-color: $blue-linght;
+      border-color: $blue-linght;
+      color: $white;
+    }
+
+    svg {
+      position: absolute;
+      right: pxToRem(10);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  @include breakpoint(xl600) {
+    h2 {
+      font-size: pxToRem(16);
+    }
+
+    h3,
+    a {
+      font-size: pxToRem(15);
+    }
+
+    h3 {
+      font-size: pxToRem(25);
+    }
+
+    a {
+      padding: pxToRem(9) pxToRem(15);
+      min-width: pxToRem(100);
+      font-size: pxToRem(12);
+    }
+  }
+
+  @include breakpoint(xm480) {
+    padding: 0;
+
+    h2 {
+      font-size: pxToRem(14);
+    }
+
+    h3,
+    a {
+      font-size: pxToRem(13);
+    }
+
+    h3 {
+      font-size: pxToRem(20);
+    }
+
+    a {
+      padding: pxToRem(6) pxToRem(10);
+      min-width: pxToRem(90);
+      font-size: pxToRem(11);
+      margin-left: pxToRem(5);
+    }
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1200px) {
+    h3 {
+      font-size: pxToRem(16);
+    }
+  }
+}
+
+.recharts-responsive-container {
+  position: relative;
+
+  .recharts-default-legend {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .recharts-legend-wrapper {
+    bottom: pxToRem(15) !important;
+  }
+}
+
+.data-empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+
+  @media (max-width: 768px) {
+    font-size: pxToRem(14);
+    margin-left: pxToRem(25);
+  }
+}
+
+.recharts-legend-wrapper {
+  .recharts-legend-item {
+    width: 100%;
+    text-align: right;
+    margin: 0 !important;
+
+    @include breakpoint(xl500) {
+      .recharts-legend-item-text {
+        font-size: pxToRem(10);
+      }
+    }
+  }
+}
+
+.recharts-label-list * {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.recharts-legend-item {
+  .recharts-surface {
+    display: none !important;
+  }
+}
+
+.recharts-bar-rectangle {
+  position: relative;
+  z-index: 1;
+  top: -10px;
+  bottom: -100px;
+
+  .recharts-rectangle {
+    position: absolute;
+    top: -59px;
+    stroke-opacity: 1;
+    stroke-miterlimit: 2;
+  }
+}
+
+.custom-tooltip {
+  background: $white;
+  padding: pxToRem(10);
+  border: pxToRem(1) solid $dusty-gray;
+}
+
+body .title-bar-chart {
+  font-size: pxToRem(24);
+}
+
+.bar-chart {
+  .recharts-xAxis {
+    .recharts-cartesian-axis-ticks {
+      .recharts-cartesian-axis-tick {
+        tspan {
+          font-size: pxToRem(12);
+
+          @media (max-width: 1599px) {
+            font-size: pxToRem(10);
+          }
+
+          @media (max-width: 480px) {
+            font-size: pxToRem(8);
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrap-data-empty {
+  height: 350px;
+}
+
+.wrap-data-empty-250 {
+  height: 250px;
+}

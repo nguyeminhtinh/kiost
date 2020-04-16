@@ -1,0 +1,33 @@
+h1 {
+  font-family: $NanumSquare-Font;
+  font-weight: $thin;
+}
+
+.home-main {
+  @media screen and (min-width: 767px) {
+    .wrapper-loading {
+      height: calc(100vh - 120px);
+    }
+  }
+}
+
+.title-weig {
+  font-weight: bold;
+  font-size: pxToRem(22);
+}
+.table-expiration {
+  table {
+    tr {
+      td {
+        &:nth-of-type(1) {
+          display: none;
+        }
+      }
+      &.table-no-data {
+        td {
+          display: table-cell !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.total {
+  width: 20%;
+  float: right;
+  text-align: center;
+  margin-bottom: pxToRem(10);
+  min-width: pxToRem(150);
+
+  &__title {
+    background-color: $dove-gray;
+    padding: pxToRem(5);
+    color: $white;
+  }
+
+  &__money {
+    border: pxToRem(1) solid $dove-gray;
+
+    p {
+      margin-bottom: 0;
+      padding: pxToRem(10);
+      font-size: pxToRem(25);
+      font-weight: $bold;
+
+      span {
+        padding-left: pxToRem(10);
+        font-size: pxToRem(20);
+      }
+    }
+  }
+}
+
+.phoneMember {
+  border: pxToRem(1) solid $btn-transparent-border;
+  display: flex;
+  align-items: center;
+  margin-bottom: pxToRem(20);
+  width: pxToRem(370);
+
+  p {
+    margin-bottom: 0;
+    font-size: pxToRem(20);
+
+    &.label-phone {
+      background-color: $brown;
+      color: $white;
+      padding: pxToRem(10) pxToRem(20);
+    }
+
+    &.number-phone {
+      padding: pxToRem(10) pxToRem(20);
+    }
+  }
+}
+
+.custom-striped {
+  .table {
+    tr {
+      background-color: transparent !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .total {
+    .total__money {
+      p {
+        font-size: pxToRem(15);
+      }
+    }
+  }
+
+  .phoneMember {
+    width: 100%;
+
+    p {
+      font-size: pxToRem(15);
+    }
+  }
+}

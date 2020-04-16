@@ -1,0 +1,346 @@
+body a {
+  text-decoration: none;
+
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@include breakpoint(xl500) {
+  .wrap-chart {
+    overflow-x: scroll;
+
+    .recharts-responsive-container {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.overflow-x {
+  position: relative;
+
+  @include breakpoint(xl500) {
+    &.bar-chart {
+      .wrap-chart {
+        overflow-x: unset;
+      }
+
+      .recharts-responsive-container {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @include breakpoint(lg1280) {
+    &.bar-chart {
+      .wrap-chart {
+        overflow-x: scroll;
+      }
+    }
+  }
+}
+
+.line-chart {
+  &.line-overflow-x {
+    position: relative;
+
+    .wrap-chart {
+      @include breakpoint(xl500) {
+        overflow-x: unset;
+      }
+    }
+
+    @include breakpoint(xm480) {
+      .wrap-chart {
+        overflow-x: scroll;
+
+        .recharts-responsive-container {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+ul.pagination {
+  justify-content: center;
+  padding: 0;
+  margin: pxToRem(20) 0;
+
+  @include breakpoint(sm992) {
+    margin-top: pxToRem(20);
+  }
+
+  @include breakpoint(xm480) {
+    .page-item {
+      .page-link {
+        padding: pxToRem(10) pxToRem(12);
+        font-size: pxToRem(13);
+      }
+    }
+  }
+}
+
+.input-width {
+  .input__wrapper {
+    @include breakpoint(min600) {
+      width: 25%;
+    }
+
+    width: 35%;
+    min-width: pxToRem(320);
+
+    @include breakpoint(sm375) {
+      min-width: auto;
+    }
+  }
+}
+
+.table-price {
+  td:nth-child(5) {
+    text-align: right;
+  }
+
+  td:nth-child(6) {
+    text-align: right;
+  }
+}
+
+.table-price-4-6 {
+  td:nth-child(4) {
+    text-align: right;
+  }
+
+  // td:nth-child(6) {
+  //   text-align: right;
+  // }
+}
+
+.table-price-4-5 {
+  td:nth-child(4) {
+    text-align: right;
+  }
+
+  td:nth-child(5) {
+    text-align: right;
+  }
+}
+
+.table-price-2-3 {
+  td:nth-child(2) {
+    text-align: right;
+  }
+
+  td:nth-child(3) {
+    text-align: right;
+  }
+}
+
+.table-price-3-4 {
+  td:nth-child(3) {
+    text-align: right;
+  }
+
+  td:nth-child(4) {
+    text-align: right;
+  }
+}
+
+.table-price-5 {
+  td:nth-child(5) {
+    text-align: right;
+  }
+}
+
+.table-price-3 {
+  td:nth-child(3) {
+    text-align: right;
+  }
+}
+
+.table-price-4 {
+  td:nth-child(4) {
+    text-align: right;
+  }
+
+  td:nth-child(5) {
+    text-align: right;
+  }
+}
+
+.table-price-5-7 {
+  td:nth-child(5) {
+    text-align: right;
+  }
+}
+
+.react-datepicker__header {
+  .react-datepicker__current-month--hasYearDropdown {
+    display: none;
+  }
+
+  .react-datepicker__month-read-view--selected-month,
+  .react-datepicker__year-read-view--selected-year {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.input-w100 {
+  .input__wrapper {
+    margin-right: pxToRem(15);
+    width: 100%;
+  }
+}
+
+.modal-footer {
+  .btn.btn-primary {
+    background-color: $btn-secondary-bg2;
+    border-color: $btn-secondary-bg2;
+    color: $white;
+  }
+}
+
+.input__wrapper {
+  .input.red {
+    border-color: $red;
+  }
+}
+
+.red.input__box {
+  .css-yk16xz-control {
+    border-color: $red;
+  }
+}
+
+.error-msg {
+  color: $red;
+  font-size: pxToRem(12);
+  margin: 0;
+}
+
+.css-1hwfws3 {
+  height: 100% !important;
+  overflow: inherit !important;
+}
+
+.css-1pahdxg-control {
+  height: 100%;
+
+  .css-1hwfws3 {
+    height: 100% !important;
+    overflow: inherit !important;
+  }
+}
+
+input {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+input::placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder {
+  line-height: normal !important;
+}
+
+body .custom-file-label {
+  white-space: nowrap;
+}
+
+.d-line {
+  position: relative;
+
+  &::after {
+    content: '-';
+    position: absolute;
+    top: pxToRem(3);
+    height: 100%;
+    right: pxToRem(-3);
+    font-size: pxToRem(20);
+  }
+}
+
+.w-md-75.table-status {
+  @include breakpoint(min992) {
+    width: 75%;
+  }
+}
+
+.css-107lb6w-singleValue {
+  color: $dove-gray !important;
+}
+
+.react-datepicker__year-read-view,
+.react-datepicker__month-read-view,
+.react-datepicker__month-year-read-view {
+  min-width: pxToRem(76);
+}
+
+.css-1uccc91-singleValue {
+  overflow: inherit !important;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.border-wrapper {
+  border: 0.0625rem solid $gray-light;
+  border-top: 0 !important;
+}
+
+.mh-500 .modal-content {
+  max-height: 500px;
+}
+
+.mh-500 .modal-body img {
+  max-height: 350px;
+  width: auto;
+  max-width: 100%;
+}
+
+.react-datepicker__input-container
+  input:disabled
+  ~ .react-datepicker__close-icon {
+  pointer-events: none;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1025px) {
+  body .line-chart.line-overflow-x .title-chart {
+    display: block;
+    position: relative;
+    padding-right: pxToRem(105);
+
+    h2,
+    h3 {
+      line-height: pxToRem(21);
+    }
+
+    a {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+  body .line-chart.line-overflow-x {
+    .wrap-chart {
+      overflow-x: hidden !important;
+    }
+  }
+}
+
+.productStockId-none .table tr td:nth-child(11) {
+  display: none !important;
+}

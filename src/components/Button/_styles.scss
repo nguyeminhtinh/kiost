@@ -1,0 +1,65 @@
+.btn {
+  min-width: pxToRem(100);
+  cursor: pointer;
+
+  // FIXME: update when have new UI state from design
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:disabled,
+  &[disabled] {
+    opacity: 0.5;
+    cursor: auto;
+  }
+
+  &--primary {
+    background-color: $btn-primary-bg;
+    @include boxShadow(0, pxToRem(8), pxToRem(16), 0, $orange-transparent);
+  }
+
+  &--secondary {
+    background-color: $btn-secondary-bg;
+  }
+
+  &--outline {
+    background-color: $btn-outline-bg;
+    color: $btn-outline-color;
+    @include border(pxToRem($border-width-base), solid, $btn-outline-border);
+  }
+
+  &--transparent {
+    color: $btn-transparent-color;
+    background-color: $btn-transparent-bg;
+    @include border(
+      pxToRem($border-width-base),
+      solid,
+      $btn-transparent-border
+    );
+  }
+  &.green.btn-primary {
+    background-color: $green;
+    border-color: $green;
+  }
+  &.black.btn-primary {
+    background-color: $steal-transparent;
+    border-color: $steal-transparent;
+  }
+  &.governor.btn-primary {
+    background-color: $blue;
+    border-color: $blue;
+  }
+  &.red.btn-primary {
+    background-color: $red;
+    border-color: $red;
+  }
+  &.reject.btn-primary {
+    background-color: $cherry;
+    border-color: $cherry;
+  }
+}
+.table-main {
+  .black {
+    padding: pxToRem(10) pxToRem(30);
+  }
+}

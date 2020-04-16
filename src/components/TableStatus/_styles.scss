@@ -1,0 +1,16 @@
+.wrapper__status {
+  border-bottom: pxToRem(1) solid $alto-ess;
+
+  .boder-item {
+    border: pxToRem(1) solid $alto-ess;
+    border-bottom: 0;
+    padding: pxToRem(10);
+    text-align: center;
+
+    &.title {
+      background-color: $dove-gray;
+      color: $white;
+      font-weight: bold;
+    }
+  }
+}

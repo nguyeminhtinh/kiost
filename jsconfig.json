@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "api/*": ["./src/api"],
+      "components/*": ["./src/components"],
+      "pages/*": ["./src/pages"],
+      "home/*": ["./src/home"],
+      "account/*": ["./src/account"],
+      "mockData/*": ["./src/mockData"],
+      "constants/*": ["./src/constants"],
+      "utils/*": ["./src/utils"],
+      "store/*": ["./src/store"],
+      "customHooks/*": ["./src/customHooks"],
+      "config/*": ["./src/config"],
+      "assets/*": ["./src/assets"],
+      "inventory/*": ["./src/InventoryManagement"]
+    }
+  },
+  "include": ["src"]
+}

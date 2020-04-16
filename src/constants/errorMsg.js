@@ -1,0 +1,41 @@
+const ERROR_MESSAGE = {
+  EMAIL: 'Incorrect email format.',
+  PASSWORD:
+    'Please use a stronger password. We recommend a mix of uppercase and lowercase letters and numbers.',
+  REQUIRED: '이 필드는 필수입니다.',
+  USER_NAME: 'Incorrect user name format.',
+  USER_INCORRECT: '아이디 또는 비밀번호가 잘못되었습니다.',
+  ID_REQUIRED: '아이디를 입력해주세요.',
+  PASSWORD_REQUIRED: '비밀번호를 입력해주세요.',
+  PRODUCT_ARE_OUT_OF_STOCK: '품절된 상품입니다.',
+  THERE_ARE_NO_REGISTERED_PRODUCT:
+    '등록된 상품이 없습니다.\n상품을 등록하세요.',
+  CANCEL_EDIT_DRIVE: '취소하시겠습니까?',
+  CONFIRM_EDIT_DRIVE: '기기 정보를 수정하시겠습니까?',
+  CANNOT_DATA_EXIT: '데이터가 존재하지 않습니다.',
+  CONFIRM_ADD_PRODUCT: '기기 정보를 수정하시겠습니까?',
+  CANCEL_EDIT_PRODUCT: '취소하시겠습니까?',
+  DELETE_PRODUCT: '상품정보를 삭제하시겠습니까?',
+  DELETE_PRODUCT_SUCCESS: '제품을 성공적으로 삭제했습니다.',
+  MODIFLY_PRODUCT: '상품 정보를 수정하시겠습니까?',
+  CONFIRM_EDIT_PRODUCT: '상품 정보를 수정하시겠습니까?',
+  CONFIRM_CLOSE_PAYMENT: '결제취소 하시겠습니까?',
+  REGISTER_SUCCESS: '등록되었습니다.',
+  REGISTER_FAILED: '상품 등록',
+  VALIDATE_TIME: '유효기한이 현재날짜보다 켜야 합니다',
+  DELETE_FAILED: '제품 삭제 실패',
+  UPDATE_FAILED: '제품 수리 실패',
+  CONFIRM_CANNEL: '취소하시겠습니까?',
+  CONFIRM_APPLY: '등록되었습니다.',
+  UPDATE_MODIFY: '상품 정보를 수정하시겠습니까?',
+  UPDATE_SUCCESS: '수정되었습니다.',
+  TEXT_POPUP_CANCEL: '취소 시 수정한 정보가 \n 저장되지 않습니다.',
+  NUMBER_VALUE: '번호를 입력 해주세요.',
+  TEXT_VALIDATE_PASSWORD: '8자~20자 영문/숫자 가능',
+  PRICE_NUMBER: '금액을 확인해주세요.',
+  WEIGHT_NUMBER: '중량을 확인해주세요.',
+  PRODUCT_ARE_OUT_OF_STOCK_ADD_PRODUCT: '키오스크에서 상품을 등록해주세요.',
+  VALIDATE_TIME_SEARCH: '유효기한이 제조일보다 작습니다.'
+};
+
+export default ERROR_MESSAGE;

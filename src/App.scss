@@ -1,0 +1,94 @@
+@import './styles/reset';
+
+// variables
+@import './styles/variables';
+@import './styles/core';
+
+// mixins
+@import './styles/mixins';
+
+// functions
+@import './styles/functions';
+
+// fonts
+@import './styles/fonts';
+
+// placeholders
+@import './styles/placeholders';
+
+// base
+@import './styles/base';
+
+// components
+@import './components/Button/styles';
+// Themes
+@import './styles/themes';
+
+// Avatar
+@import './components/Avatar/styles';
+@import './components/Input/styles';
+@import './components/Modal/styles';
+@import './components/Charts/styles';
+@import './components/Charts/ChartDay/styles';
+@import './components/Form/styles';
+@import './components/Table/styles';
+@import './components/BoxDetail/style';
+@import './components/Loading/styles';
+
+// Checkbox
+@import './components/Checkbox/styles';
+
+// pages
+@import './home/components/styles';
+
+// Layout
+@import './layout/MainLayout/styles';
+
+// Header
+@import './components/Header/styles';
+
+// Menu
+@import './layout/Menu/styles';
+
+// Login
+@import './account/components/SignIn/styles';
+
+// Select
+@import './components/Select/styles';
+
+// Info StoreManager
+@import './storeManagement/components/MerchantInfo/styles';
+
+// Title Header
+@import './components/TitleHeader/styles';
+
+// Box Count
+@import './components/BoxCount/styles';
+
+// Radio
+@import './components/Radio/styles';
+
+// FormRegisterDevice
+@import './device/components/form/FormDeviceDetail';
+// Table status
+@import './components/TableStatus/styles';
+// Table status Device
+@import './device/components/Device/styles';
+//Page revenueDay
+@import './revenue/components/revenueDay/styles';
+// member info
+@import './memberManagement/components/styles';
+@import './memberManagement/components/memberInfo/styles';
+// Table status Revenue
+@import './revenue/components/revenueTime/styles';
+
+@import './revenue/components/revenueProduct/styles';
+@import './storeManagement/components/styles';
+@import './components/ImageViewer/styles';
+
+// FormMerchandise
+@import './InventoryManagement/components/inventoryDetail/style';
+@import './merchandiseManagement/components/productAdd/style';
+@import './advertisement/components/styles';
+
+@import './merchandiseManagement/components/styles';

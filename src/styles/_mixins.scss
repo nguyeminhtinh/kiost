@@ -1,0 +1,213 @@
+/*
+ * mixin: fontFamily
+ * Used to set setup font-face and font-family
+*/
+@mixin fontFamily($font-name, $font-url) {
+  @font-face {
+    font-family: $font-name;
+    src: url('#{$font-url}#{$font-name}.ttf');
+  }
+}
+
+/*
+ * mixin: fontSize
+ * Used to setup font-size
+*/
+@mixin fontSize($size) {
+  font-size: pxToRem($size);
+}
+
+/*
+ *mixin: boxShadow
+ *Used to setup box-shadow
+*/
+@mixin boxShadow($top, $left, $blur, $color, $inset: '') {
+  -webkit-box-shadow: $top $left $blur $color #{$inset};
+  -moz-box-shadow: $top $left $blur $color #{$inset};
+  box-shadow: $top $left $blur $color #{$inset};
+}
+
+/*
+ *mixin: border
+ *Used to setup border
+*/
+@mixin border($width, $style, $color, $direction: false) {
+  @if $direction {
+    border-#{$direction}: $width $style $color;
+  } @else {
+    border: $width $style $color;
+  }
+}
+
+/*
+ *mixin: Transform
+ *Used to setup  Transform rotate
+*/
+
+@mixin transformRotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin transition($time) {
+  -webkit-transition: $time;
+  -moz-transition: $time;
+  -o-transition: $time;
+  transition: $time;
+}
+
+@mixin transform-style($style) {
+  transform-style: $style;
+  -moz-transform-style: $style;
+  -o-transform-style: $style;
+  -ms-transform-style: $style;
+  -webkit-transform-style: $style;
+}
+
+@mixin transition($time) {
+  transition: $time;
+  -webkit-transition: $time;
+  -moz-transition: $time;
+  -o-transition: $time;
+}
+
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin radius($style) {
+  border-radius: $style;
+  -webkit-border-radius: $style;
+  -moz-border-radius: $style;
+  -o-border-radius: $style;
+}
+
+@mixin breakpoint($point) {
+  @if ($point==lgmax17) {
+    @media (max-width: 1700px) {
+      @content;
+    }
+  }
+
+  @if ($point==ml600) {
+    @media (min-width: 1600px) {
+      @content;
+    }
+  }
+
+  @if ($point==xl600) {
+    @media (max-width: 1599px) {
+      @content;
+    }
+  }
+
+  @if ($point==xl500) {
+    @media (max-width: 1499px) {
+      @content;
+    }
+  } @else if ($point==lg1280) {
+    @media (max-width: 1280px) {
+      @content;
+    }
+  } @else if ($point==lg1200) {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if ($point==sm992) {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if ($point==sm768) {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if ($point==xm480) {
+    @media (max-width: 480px) {
+      @content;
+    }
+  } @else if ($point==sm375) {
+    @media (max-width: 375px) {
+      @content;
+    }
+  } @else if ($point==sm360) {
+    @media (max-width: 360px) {
+      @content;
+    }
+  } @else if ($point==sm320) {
+    @media (max-width: 320px) {
+      @content;
+    }
+  } @else if ($point==min992) {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if ($point==min768) {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
+@mixin appearance {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+@mixin transform-rotate($deg) {
+  transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -webkit-transform: rotate($deg);
+}
+
+@mixin transform-translate($x, $y) {
+  transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -webkit-transform: translate($x, $y);
+}
+
+@mixin ie11() {
+  @media screen and (-ms-high-contrast: active),
+    screen and (-ms-high-contrast: none) {
+    @content;
+  }
+}
+
+@mixin ieEdge() {
+  @supports (-ms-ime-align: auto) {
+    @content;
+  }
+}
+
+@mixin firefox() {
+  @media screen and (min--moz-device-pixel-ratio: 0) {
+    @content;
+  }
+}
+
+@mixin transform-translateX($x) {
+  transform: translateX($x);
+  -moz-transform: translateX($x);
+  -o-transform: translateX($x);
+  -ms-transform: translateX($x);
+  -webkit-transform: translateX($x);
+}
+
+@mixin transform-translateY($y) {
+  transform: translateY($y);
+  -moz-transform: translateY($y);
+  -o-transform: translateY($y);
+  -ms-transform: translateY($y);
+  -webkit-transform: translateY($y);
+}

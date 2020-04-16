@@ -1,0 +1,6 @@
+diff a/flow-typed/npm/@fortawesome/fontawesome-svg-core_vx.x.x.js b/flow-typed/npm/@fortawesome/fontawesome-svg-core_vx.x.x.js	(rejected hunks)
+@@ -31 +31,3 @@ declare module '@fortawesome/fontawesome-svg-core/index.es.js' {
+-  declare module.exports: $Exports<'@fortawesome/fontawesome-svg-core/index.es'>;
++  declare module.exports: $Exports<
++    '@fortawesome/fontawesome-svg-core/index.es'
++  >;

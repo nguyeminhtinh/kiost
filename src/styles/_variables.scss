@@ -1,0 +1,112 @@
+$font-size-base: 16;
+$border-width-base: 2;
+
+/**
+ * Variable for colors
+*/
+$white: #fff;
+$white-dark: #e4e5e6;
+$white-opacity-2: rgba(255, 255, 255, 0.2);
+$wild-sand: #f4f4f4;
+$brown: #4a4a4a;
+$black-opacity-7: rgba(0, 0, 0, 0.7);
+$gallery: #ececec;
+$mercury: #e4e4e4;
+$alto: #e0e0e0;
+$steal: #d7d7de;
+$hummer: #ccc;
+$white-opacity-3: #d5d7f1;
+$white-opacity-4: rgba(245, 245, 245, 0.69);
+$dusty-gray: #9b9b9b;
+$dusty-gray-secondary: #979797;
+$bgLoadingIndicator: rgba(255, 255, 255, 1.8);
+$gray-sec: #495057;
+$gray: #919191;
+$gray-light: #d7d8df;
+$dove-gray: #666666;
+$dove-gray-light: #6a6b86;
+$btn-secondary-bg2: #6c757d;
+$iron: #393939;
+$steal-transparent: #212529;
+$dove-transparent: #0000001f;
+$cove-transparent: #0000002b;
+$stone-transparent: #05083299;
+$alto-transparent: rgba(156, 156, 156, 0.7);
+$bg-transparent: rgba(156, 156, 156, 0.2);
+$deep-cove: #060834;
+$deep-cove-transparent: #787991;
+$black: #000;
+$silver: #bbb;
+$orange: #fc6915;
+$black-light: #222222;
+$black-light-2: #212020;
+$orange-transparent: #fc69153d;
+$orange-transparent-weight: rgba(252, 105, 21, 0.5);
+$blue-darker: #80bdff;
+$black-transparent: #0000003d;
+$black-pearl-opacity-1: rgba(3, 13, 39, 0.1);
+$black-pearl-opacity-32: rgba(3, 13, 39, 0.32);
+$black-opacity-3: rgba(0, 0, 0, 0.3);
+$bg-popup-inventory: #f3f3f3;
+
+$governor: #3941bf;
+$bg-box: #9ca0df;
+$color-box1: #396c98;
+$bg-box-overlay: #4a51c4;
+$wistful: rgba(0, 123, 255, 0.25);
+$blue: #20a8d8;
+$cherry: #d0021b;
+$red: #e00000;
+$color-price: #f81c3b;
+$color-price-detail: #828282;
+$boder-table: #dee2e6;
+$alto-ess: #eee;
+$gray-2: #5c6873;
+$gray-3: #e4e7ea;
+$blue-linght: #1b8eb7;
+$green: #008000;
+$btn-primary: #007bff;
+$yellow: #f6ff1f;
+$d1: #76dc4a;
+$d2: #4ec6e8;
+$d3: #ff9044;
+
+$bg-sidebar: #2f353a;
+$input-error: $cherry;
+$textBody: #23282c;
+$bg-disabled: #e0e0e0;
+$color-disabled: hsl(0, 0%, 40%);
+/**
+ * Variables for button
+*/
+$btn-primary-bg: $orange;
+$btn-transparent-bg: $white;
+$btn-secondary-bg: $silver;
+$btn-outline-bg: $white;
+$btn-color-primary: $white;
+$btn-outline-color: $orange;
+$btn-transparent-color: $dove-gray-light;
+$btn-outline-border: $orange;
+$btn-transparent-border: $gray-light;
+
+/**
+* Font
+*/
+$Noto-Sans-Font: 'Noto Sans KR';
+$NanumSquare-Font: 'NanumSquare';
+$thin: 100;
+$extraLight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$extraBold: 800;
+$black: 900;
+
+/* Variable for input
+*/
+$input-default-border: $gray;
+$input-color-default: $gray-sec;
+
+$background-color: #e4e5e6;

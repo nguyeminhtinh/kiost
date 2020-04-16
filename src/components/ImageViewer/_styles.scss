@@ -1,0 +1,121 @@
+.image-viewer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: $black-opacity-7;
+  z-index: 999999999;
+  align-items: center;
+
+  &__close-btn {
+    position: absolute;
+    top: pxToRem(0);
+    right: pxToRem(20);
+    background-color: transparent;
+    color: $white;
+    border: none;
+    outline: none;
+    font-size: pxToRem(30);
+  }
+
+  &__image {
+    height: auto;
+    // max-height: 100%;
+    margin: 0 auto;
+    padding: pxToRem(50) 0;
+  }
+
+  .popup-image-review {
+    width: pxToRem(500);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: pxToRem(1) solid $dusty-gray;
+    background-color: $white;
+    border: 0;
+    margin-top: pxToRem(-1);
+
+    .head-popup {
+      display: flex;
+      justify-content: center;
+      display: flex;
+      background-color: #666666;
+      border: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      position: relative;
+
+      h4 {
+        color: $white;
+        margin: 0;
+        line-height: pxToRem(60);
+        font-size: 1.5rem;
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: pxToRem(10);
+        height: 30px;
+        width: 30px;
+
+        &::before {
+          content: '×';
+          position: absolute;
+          color: $white;
+          opacity: 0.8;
+          font-size: pxToRem(24);
+          top: pxToRem(12);
+          text-shadow: 0 1px 0 #fff;
+          line-height: 0;
+          left: pxToRem(8);
+        }
+
+        svg {
+          display: none;
+        }
+      }
+    }
+
+    @media screen and (max-width: 635px) {
+      width: calc(100% - 30px);
+    }
+  }
+
+  p {
+    position: absolute;
+    top: 0;
+    margin-top: pxToRem(14);
+  }
+}
+
+@include breakpoint(xm480) {
+  .image-viewer {
+    &__image {
+      margin-top: pxToRem(20);
+      width: 100%;
+      height: auto;
+      max-height: 50%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.max-500 {
+  max-height: pxToRem(490);
+  max-width: 100%;
+  padding: pxToRem(5);
+}
+
+.btn-close-review {
+  margin: 0 auto;
+  display: block !important;
+  background-color: $gray !important;
+  border-color: $gray !important;
+  ;
+}

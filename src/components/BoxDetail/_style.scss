@@ -1,0 +1,46 @@
+.box-detail {
+  width: pxToRem(110);
+  border: pxToRem(1) solid $dove-gray;
+  padding: pxToRem(10) pxToRem(15);
+  background-color: $governor;
+
+  &__title {
+    text-align: center;
+    margin-bottom: pxToRem(10);
+    color: $white;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__body {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    margin-bottom: pxToRem(5);
+
+    p {
+      margin-bottom: 0;
+      font-size: pxToRem(16);
+      color: $white;
+
+      @include breakpoint(xl600) {
+        font-size: pxToRem(14);
+      }
+
+      &:nth-child(1) {
+        width: calc(100% - #{pxToRem(25)});
+        overflow: hidden;
+      }
+
+      &:nth-child(2) {
+        width: pxToRem(25);
+        text-align: right;
+      }
+    }
+  }
+}

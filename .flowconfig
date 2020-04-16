@@ -1,0 +1,35 @@
+[ignore]
+.*/build/.*
+.*/node_modules/.*
+
+[include]
+
+[libs]
+flow-typed
+./interfaces/global.js
+./src/components/Form/FourthSearch.js
+./src/components/Form/FiveSearch.js
+./src/components/Form/PaymentSearch.js
+./src/revenue/components/revenueProduct/index.js
+./src/revenue/components/revenueStore/index.js
+./src/revenue/components/payment/index.js
+./interfaces/global.js
+
+[lints]
+
+[options]
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.json
+module.file_ext=.css
+module.file_ext=.scss
+module.name_mapper.extension='css' -> 'empty/object'
+module.name_mapper.extension='scss' -> 'empty/object'
+module.name_mapper='^api' ->'<PROJECT_ROOT>/src/api'
+module.name_mapper='^components' ->'<PROJECT_ROOT>/src/components'
+module.name_mapper='^pages' ->'<PROJECT_ROOT>/src/pages'
+module.name_mapper='^constants' ->'<PROJECT_ROOT>/src/constants'
+module.name_mapper='^utils' ->'<PROJECT_ROOT>/src/utils'
+module.name_mapper='.*\(.css\)' -> 'CSSModule'
+module.system=haste
+[strict]

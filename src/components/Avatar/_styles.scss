@@ -1,0 +1,19 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: pxToRem(30) pxToRem(15);
+  border-bottom: 1px solid #bbb;
+  &__img {
+    width: pxToRem(160);
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__username {
+    margin-bottom: 0;
+    margin-left: pxToRem(10);
+    font-family: $Noto-Sans-Font;
+    font-weight: $semiBold;
+  }
+}

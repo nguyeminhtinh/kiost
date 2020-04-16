@@ -1,0 +1,147 @@
+.sidebar {
+  height: 100vh;
+  width: pxToRem(200);
+  height: 100vh;
+  color: $white;
+  background: $bg-sidebar;
+}
+
+.heightMenu.sidebar {
+  position: absolute;
+  min-height: 100%;
+}
+
+.main-content {
+  width: calc(100% - #{pxToRem(200)});
+  margin-left: pxToRem(200);
+  padding: pxToRem(15);
+
+  .content {
+    word-wrap: break-word;
+    background-color: $white;
+    background-clip: border-box;
+    border-radius: pxToRem(4);
+
+    .home-main {
+      border: pxToRem(1) solid $gray-light;
+    }
+  }
+}
+
+.wrapper-content {
+  vertical-align: top;
+  display: flex;
+  position: relative;
+
+  &.open {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+
+    &:after {
+      background-color: rgba($black-transparent, 0.8);
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: pxToRem(50);
+      left: 0;
+      z-index: 99;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper-content {
+    display: block;
+
+    .main-content {
+      width: 100%;
+      margin-left: 0;
+      padding-top: pxToRem(80);
+    }
+  }
+
+  .btn-menu {
+    position: relative;
+    width: pxToRem(40);
+    height: pxToRem(40);
+    display: inline-block;
+    margin-left: pxToRem(15);
+    margin-top: pxToRem(6);
+    background-color: $blue;
+
+    span {
+      position: relative;
+      z-index: 2;
+      display: block;
+      height: pxToRem(3);
+      width: pxToRem(23);
+      top: 47%;
+      background-color: $white;
+      @include transition(0.3s ease-in-out);
+      margin: auto;
+
+      &::before,
+      &:after {
+        content: '';
+        position: absolute;
+        height: pxToRem(3);
+        left: 0;
+        background-color: $white;
+        width: 100%;
+        @include transition(0.3s ease-in-out);
+        display: inline-block;
+        transition: all 300ms ease;
+      }
+
+      &::before {
+        top: pxToRem(-5);
+      }
+
+      &::after {
+        bottom: pxToRem(-5);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &.show {
+      span {
+        background: transparent;
+
+        &::before {
+          top: 50%;
+          transform: translateY(-50%) rotate(-45deg);
+        }
+
+        &::after {
+          transform: translateY(-50%) rotate(45deg);
+          top: 50%;
+        }
+      }
+    }
+  }
+
+  .wrapper-mobile {
+    background-color: $wild-sand;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+  }
+}
+
+@include breakpoint(min992) {
+  .wrapper-mobile {
+    display: none;
+  }
+}
+
+@include breakpoint(xm480) {
+  body .main-content {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
